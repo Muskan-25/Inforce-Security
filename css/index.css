@@ -8,7 +8,7 @@ a {
 /* ===== HERO ===== */
 .hero {
   position: relative;
-  background-image: url('../images/home_banner.avif');
+  background-image: url('../images/home-banner.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

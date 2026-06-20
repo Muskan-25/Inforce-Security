@@ -29,6 +29,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    border-bottom: 2px solid var(--maroon);
 }
 
 .mobile-menu-btn {
@@ -195,7 +196,7 @@
 }
 
 .brand-icon {
-    width: 160px;
+    width: 60px;
     height: auto;
     color: #fff;
     display: flex;

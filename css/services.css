@@ -4,7 +4,7 @@
     height:320px;
     background:
         linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-        url('../images/services-banner.avif') center/cover;
+        url('../images/services-banner.png') bottom/cover;
     display:flex;
     align-items:center;
     background-attachment: fixed;
@@ -61,7 +61,7 @@
 }
 
 .service-content{
-    width:80%;
+    width:85%;
     background:#fff;
     padding:25px;
     position:relative;

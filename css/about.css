@@ -9,7 +9,7 @@
 }
 
 .about-row .image-box{
-    background: url('../images/about-banner.avif') bottom/cover no-repeat;
+    background: url('../images/home-banner.jpeg') center/cover no-repeat;
     height: 320px;
     padding: 55px;
     margin-right: -90px;
@@ -17,14 +17,14 @@
 }
 
 .about-row-2 .image-box{
-    background: url('../images/event-security.webp') right center/cover no-repeat;
+    background: url('../images/home-banner.jpeg')  top/cover no-repeat;
     margin-left: -90px;
     margin-right: 0px;
     background-attachment: fixed;
 }
 
 .about-row-3 .image-box{
-    background: url('../images/our-mission.avif') center/cover no-repeat;
+    background: url('../images/home-banner.jpeg') top/cover no-repeat;
     background-attachment: fixed;
 }
 
