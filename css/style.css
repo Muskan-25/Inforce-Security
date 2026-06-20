@@ -85,6 +85,9 @@ span{
 }
 
 @media (max-width:767px) {
+    *{
+        background-attachment: scroll !important;
+    }
     .info-strip .info-item+.info-item {
         border-left: none;
         border-top: 1px solid rgba(255, 255, 255, .25);
