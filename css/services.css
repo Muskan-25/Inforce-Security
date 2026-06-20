@@ -1,0 +1,135 @@
+/* HERO */
+
+.hero{
+    height:320px;
+    background:
+        linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+        url('../images/services-banner.avif') center/cover;
+    display:flex;
+    align-items:center;
+    background-attachment: fixed;
+    justify-content:center;
+    margin: 30px 30px 0;
+}
+
+.hero h1{
+    color:#fff;
+    font-size:60px;
+    font-weight:700;
+}
+
+/* INTRO */
+
+.intro{
+    margin:40px 30px;
+    background:#ececec;
+    text-align:center;
+    padding:60px 100px;
+}
+
+.intro p{
+    font-size:18px;
+    line-height:1.4;
+    color:#444;
+}
+
+/* SERVICES */
+
+.services-section{
+    margin:0 30px 30px;
+    background:#ececec;
+    padding:50px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
+    padding: 0 150px;
+}
+
+.service-card{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card img{
+    width:80%;
+    height:250px;
+    object-fit:cover;
+}
+
+.service-content{
+    width:80%;
+    background:#fff;
+    padding:25px;
+    position:relative;
+    margin:-60px 0 0 auto;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.service-content h3{
+    color:#425073;
+    font-size:24px;
+    font-weight: 600;
+    margin-bottom:0;
+}
+
+.service-content p{
+    color:#555;
+    line-height:1.4;
+    font-size: 16px;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+  -webkit-line-clamp: 3; /* max 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+
+
+@media(max-width:992px){
+
+    .services-grid{
+        padding: 0;
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+        margin: 15px 10px 0;
+    }
+    .intro{
+        margin: 15px 10px;
+    }
+    .services-section{
+        padding: 20px;
+        margin: 0px 10px 10px;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .intro{
+        padding:40px 25px;
+    }
+}

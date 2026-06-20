@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inforce Security Services Ltd</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <!-- Fonts: Montserrat (body) + Roboto Condensed (headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="site-navbar">
+    <div class="container">
+
+      <div class="d-flex align-items-center justify-content-between">
+
+        <!-- Logo -->
+        <div class="d-flex align-items-center gap-3">
+          <a class="brand-icon" href="index.html">
+            <img src="images/logo.png" alt="Inforce Security">
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav d-none d-lg-flex">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+
+          <li class="nav-item dropdown">
+
+            <!-- Main link goes to Services page -->
+            <a class="nav-link" href="services.html">
+              SERVICES
+            </a>
+
+            <!-- Separate dropdown button -->
+            <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+            </a>
+
+            <ul class="dropdown-menu service-dropdown">
+              <li><a class="dropdown-item" href="services/alarm-response.html">Alarm Response</a></li>
+              <li><a class="dropdown-item" href="services/24-hour-service.html">24 Hour Service</a></li>
+              <li><a class="dropdown-item" href="services/event-security.html">Event Security</a></li>
+              <li><a class="dropdown-item" href="services/cctv-surveillance.html">CCTV Surveillance</a></li>
+              <li><a class="dropdown-item" href="services/mobile-patrol.html">Mobile Patrols</a></li>
+              <li><a class="dropdown-item" href="services/construction-security.html">Construction Security</a></li>
+            </ul>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+
+        <!-- Desktop Contact -->
+        <div class="nav-contact text-end d-none d-lg-block">
+          <div>
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+91 778 837 5053">778 837 5053</a>
+          </div>
+
+          <div>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:info@inforcesecurityltd.ca">info@inforcesecurityltd.ca</a>
+          </div>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-menu-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <i class="bi bi-list"></i>
+        </button>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ================= MOBILE OFFCANVAS ================= -->
+
+  <div class="offcanvas offcanvas-start mobile-sidebar" tabindex="-1" id="mobileMenu">
+
+    <div class="offcanvas-header">
+
+      <div class="d-flex align-items-center gap-3">
+
+        <a class="brand-icon" href="index.html">
+          <img src="images/logo.png" alt="Inforce Security">
+        </a>
+
+      </div>
+
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+      </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+      <!-- Menu -->
+      <ul class="mobile-nav">
+
+        <li>
+          <a href="index.html" data-bs-dismiss="offcanvas">
+            HOME
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html" data-bs-dismiss="offcanvas">
+            ABOUT US
+          </a>
+        </li>
+
+        <li>
+
+          <a href="services.html">
+            SERVICES
+          </a>
+
+          <a class="mobile-dropdown-toggle" data-bs-toggle="collapse" href="#mobileServicesMenu">
+
+            <i class="bi bi-chevron-down"></i>
+          </a>
+
+          <div class="collapse" id="mobileServicesMenu">
+            <ul class="mobile-submenu">
+
+              <li>
+                <a href="services/alarm-response.html">
+                  Alarm Response
+                </a>
+              </li>
+
+              <li>
+                <a href="services/24-hour-service.html">
+                  24 Hour Service
+                </a>
+              </li>
+
+              <li>
+                <a href="services/event-security.html">
+                  Event Security
+                </a>
+              </li>
+
+              <li>
+                <a href="services/cctv-surveillance.html">
+                  CCTV Surveillance
+                </a>
+              </li>
+
+              <li>
+                <a href="services/mobile-patrol.html">
+                  Mobile Patrols
+                </a>
+              </li>
+
+              <li>
+                <a href="services/construction-security.html">
+                  Construction Security
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </li>
+
+        <li>
+          <a href="contact.html" data-bs-dismiss="offcanvas">
+            CONTACT US
+          </a>
+        </li>
+
+      </ul>
+
+      <hr>
+
+      <!-- Contact Info -->
+
+      <div class="sidebar-contact">
+
+        <div class="contact-item">
+          <i class="bi bi-telephone-fill"></i>
+          <span><a href="tel:+91 778 837 5053">778 837 5053</a></span>
+        </div>
+
+        <div class="contact-item">
+          <i class="bi bi-envelope-fill"></i>
+          <span><a href="mailto:info@inforcesecurityltd.ca">info@inforcesecurityltd.ca</a></span>
+        </div>
+
+        <div class="contact-item">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span>
+            734 Caldow St,<br>
+            Kelowna, BC V1V 2N8
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+        <h1>Welcome to Inforce Security Services Ltd</h1>
+        <p>COMMITTED TO EXCELLENCE</p>
+        <a href="contact.html" class="btn btn-hero">Contact Us</a>
+      </div>
+    </div>
+    <a class="scroll-top-btn" href="#"><i class="bi bi-chevron-up"></i></a>
+  </section>
+
+  <!-- ================= INFO STRIP ================= -->
+  <section class="info-strip">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-md-4 info-item">
+          <i class="bi bi-envelope"></i>
+          <div>
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:info@inforcesecurityltd.ca">info@inforcesecurityltd.ca</a></div>
+          </div>
+        </div>
+        <div class="col-md-4 info-item">
+          <i class="bi bi-telephone"></i>
+          <div>
+            <div class="label">Contact Number</div>
+            <div class="value"><a href="tel:+91 778 837 5053">778 837 5053</a></div>
+          </div>
+        </div>
+        <div class="col-md-4 info-item">
+          <i class="bi bi-geo-alt"></i>
+          <div>
+            <div class="label">734 Caldow St, Kelowna,</div>
+            <div class="value">BC V1V 2N8</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="py-5" id="about">
+    <div class="container text-center py-4">
+      <h2 class="section-title mb-2">About Us</h2>
+      <p class="section-subtitle">The Full Story</p>
+      <p class="about-text">
+        As one of the leading local businesses in Kelowna, Penticton, Kamloops, Vernon we attribute
+        our reputation to the lasting customer relationships we've developed throughout the years.
+        We believe that all of our customers deserve the highest level of service, and we are
+        committed to providing just that.
+      </p>
+      <p class="about-text mt-3">
+        Explore the rest of our site to learn more about what we have to offer, and get in touch
+        with any questions. Inforce Security Services Ltd is here for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="services-section py-5" id="services">
+    <div class="container text-center py-4" style="position:relative; z-index:1;">
+      <h2 class="section-title mb-2">Services</h2>
+      <p class="section-subtitle mb-5">Exceeding Your Expectations</p>
+
+      <div class="row">
+        <div class="col-md-5 service-img-wrap">
+          <img src="images/alarm-response.avif" alt="Alarm Response">
+        </div>
+        <div class="col-md-5 service-img-wrap">
+          <img src="images/24-hours-service.avif" alt="24 Hours Service">
+        </div>
+        <div class="col-md-5 service-img-wrap">
+          <img src="images/event-security.webp" alt="Event Security">
+        </div>
+        <div class="col-md-5 service-img-wrap">
+          <img src="images/cctv-surveillance.avif" alt="CCTV Surveillance">
+        </div>
+        <div class="col-md-5 service-img-wrap">
+          <img src="images/mobile-patrols.avif" alt="Mobile Patrols">
+        </div>
+        <div class="col-md-5 service-img-wrap">
+          <img src="images/construction-security.jpg" alt="Construction Security">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA BANNER ================= -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8 text-start">
+          <div class="cta-title">PROTECT YOURSELF WITH <b>INFORCE SECURITY</b></div>
+          <p class="cta-sub">Committed to Excellence</p>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="contact.html" class="btn btn-cta">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-md-3 text-md-start">
+          <a href="index.html" class="brand-icon" style="width: 60%;">
+            <img src="images/logo.png" alt="Inforce Security">
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <h6>INFORCE SECURITY SERVICES</h6>
+          <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>734, Caldow St, Kelowna, BC V1V 2N8</p>
+          <p class="mb-1"><i class="bi bi-telephone me-2"></i><a href="tel:+91 778 837 5053">778 837 5053</a></p>
+          <p class="mb-0"><i class="bi bi-envelope me-2"></i><a
+              href="mailto:info@inforcesecurityltd.ca">info@inforcesecurityltd.ca</a></p>
+        </div>
+
+        <div class="col-md-3">
+          <h6>QUICK LINKS</h6>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6>OUR SERVICES</h6>
+          <ul>
+            <li><a href="./services/alarm-response.html">Alarm Response</a></li>
+            <li><a href="./services/24-hour-service.html">24 Hour Service</a></li>
+            <li><a href="./services/event-security.html">Event Security</a></li>
+            <li><a href="./services/cctv-surveillance.html">CCTV Surveillance</a></li>
+            <li><a href="./services/mobile-patrol.html">Mobile Patrols</a></li>
+            <li><a href="./services/construction-security.html">Construction Security</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright-bar">Copyright &copy; 2026 Inforce Security</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+
+.about-page{
+    background:#e8e8e8;
+    padding:70px 0;
+}
+
+.about-row{
+    margin-bottom:90px;
+}
+
+.about-row .image-box{
+    background: url('../images/about-banner.avif') bottom/cover no-repeat;
+    height: 320px;
+    padding: 55px;
+    margin-right: -90px;
+    background-attachment: fixed;
+}
+
+.about-row-2 .image-box{
+    background: url('../images/event-security.webp') right center/cover no-repeat;
+    margin-left: -90px;
+    margin-right: 0px;
+    background-attachment: fixed;
+}
+
+.about-row-3 .image-box{
+    background: url('../images/our-mission.avif') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.content-box{
+    background:#fff;
+    padding:55px;
+    transform: translateY(80px);
+    box-shadow:0 2px 8px rgba(0,0,0,.04);
+}
+
+.content-box h2{
+    color:#42557b;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.content-box p{
+    color:#000;
+    line-height:1.9;
+}
+
+.about-row .content-box{
+    margin-left:-90px;
+    position:relative;
+    z-index:2;
+}
+
+.about-page .row{
+    margin-bottom:160px;
+}
+
+.about-page .row:last-child{
+    margin-bottom: 100px;
+}
+
+.about-row-2 .content-box{
+    margin-left:0px;
+    margin-right: -90px;
+}
+
+
+.about-page img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+.company-summary{
+    text-align:center;
+    max-width:1200px;
+    margin:0 auto;
+    padding-top:20px;
+}
+
+.company-summary p{
+    font-size:1.1rem;
+    line-height:1.9;
+}
+
+.company-summary strong{
+    color:#000;
+}
+
+.about-2{
+    padding: 60px 30px;
+}
+
+@media(max-width:991px){
+
+    .about-row .image-box{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .about-row .content-box{
+        margin-left:0;
+        margin-top:20px;
+        margin-right: 0px;
+        transform: none;
+    }
+
+    .about-row-2 > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-row-2 > div:nth-child(2){
+        order: 0;
+    }
+
+    .about-row-2 > div:nth-child(1){
+        order: 1;
+    }
+
+    .about-page .row{
+        margin-bottom:60px;
+    }
+
+    .about-page .row:last-child{
+        margin-bottom: 0px;
+    }
+
+    .content-box{
+        padding:35px;
+    }
+
+    .nav-contact{
+        display:none;
+    }
+}
